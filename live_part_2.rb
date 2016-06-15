@@ -1,5 +1,7 @@
 # Notes taken on Live Session: Beginning Ruby Part 2
 
+---------------------------------
+
 def amethod(param)
   str += " world" # this would throw an error because str is outside of the scope
 end
@@ -9,7 +11,7 @@ amethod(str)      # pass in a string to this method
 
 p str             # will this str method be modified?
 
-******************************
+---------------------------------
 
 def amethod(param)
   param += " world"   # this is going to return a new string object, NOT permanent, reassignment, outputs hello
@@ -24,7 +26,7 @@ amethod(str)
 
 p str
 
-******************************
+---------------------------------
 
 # "Walk towards ambiguity" - Chris Lee
 # Variables point to objects
@@ -44,13 +46,13 @@ b << " universe"
 puts a
 puts b
 
-******************************
+---------------------------------
 
 # Why won't this work?
 # Because + returns a new string
 
-def prefix(str)   #
-  "Mr. " + str    #
+def prefix(str)
+  "Mr. " + str
 end
 
 name = 'joe'
@@ -58,12 +60,12 @@ prefix(name)
 
 puts name
 
-******************************
+---------------------------------
 
 # Let's fix it.
 
-def prefix(str)   #
-  "Mr. " + str    #
+def prefix(str)
+  "Mr. " + str
 end
 
 name = 'joe'
